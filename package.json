@@ -1,7 +1,7 @@
 {
   "name": "wsj.vue-resize",
   "description": "Detect DOM element resizing",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "author": {
     "name": "weishijun",
     "email": "weishijun14@qq.com"
