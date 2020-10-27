@@ -5,7 +5,7 @@ const config = Object.assign({}, base, {
   output: {
     exports: 'named',
     name: 'VueResize',
-    file: 'dist/vue-resize.min.js',
+    file: 'dist/wsj.vue-resize.min.js',
     format: 'iife',
     sourcemap: true,
   },

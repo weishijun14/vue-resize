@@ -20,6 +20,8 @@ function initCompat () {
 export default {
   name: 'ResizeObserver',
 
+  emits: ['notify'],
+
   mounted () {
     initCompat()
     this.$nextTick(() => {
@@ -41,7 +43,7 @@ export default {
     }
   },
 
-  beforeDestroy () {
+  beforeUnmount () {
     this.removeResizeHandlers()
   },
 

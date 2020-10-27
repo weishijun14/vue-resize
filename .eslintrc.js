@@ -1,14 +1,14 @@
 module.exports = {
   root: true,
+  // parser: "@babel/eslint-parser",
   parserOptions: {
-    parser: 'babel-eslint',
-    ecmaVersion: 2017,
+    ecmaVersion: 11,
     sourceType: 'module'
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
   extends: [
-    'standard',
-    'plugin:vue/recommended',
+    // 'eslint:recommended',
+    'plugin:vue/vue3-recommended',
   ],
   // required to lint *.vue files
   plugins: [
@@ -19,6 +19,7 @@ module.exports = {
   },
   // add your custom rules here
   'rules': {
+    "vue/component-definition-name-casing": 0,
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await
